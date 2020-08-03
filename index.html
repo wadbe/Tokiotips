@@ -40,7 +40,7 @@
 
 <body>
     <!-- NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navbar">
         <div class="container">
 
             <a class="navbar-brand" href="#"><img class="logosite" src="images/TT2.png" alt="Logo"></a>
@@ -54,7 +54,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#navbar">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#servicios">Servicios</a>
@@ -73,7 +73,7 @@
     <section id="fotobanner">
         <div class="container">
             <div class="textoboton">
-                <h1>Tokyo tips. <strong>Una nueva forma de viajar</strong>.</h1>
+                <h1 id="textoindex">Tokyo tips. <strong>Una nueva forma de viajar</strong>.</h1>
                 <p> Recorrer la Capital nipona ya no será más caro.</p>
                 <a class="btn btn-danger" href="#servicios">Mas Información</a>
             </div>
@@ -254,7 +254,7 @@
                         <form id="formulario" action="" class="col-md-12">
 
                             <div class="form-group">
-                              
+
                                 <input type="text" class="form-control" id="nombre" placeholder="Nombre">
                                 <small id="nombreHelp" class="form-text text muted"></small>
                             </div>
@@ -263,18 +263,19 @@
                             <div class="form-group">
 
                                 <input type="email" class="form-control" id="email" placeholder="Email">
-                             <small id="emailHelp" class="form-text text muted"></small>
+                                <small id="emailHelp" class="form-text text muted"></small>
                             </div>
 
                             <div class="form-group">
                                 <label for="comentario">Dejanos tu comentario</label>
-                                <textarea class="form-control" id="comentario" placeholder="Escribe aquí tus dudas y comentarios..."></textarea>
+                                <textarea class="form-control" id="comentario"
+                                    placeholder="Escribe aquí tus dudas y comentarios..."></textarea>
                                 <small id="comentarioHelp" class="form-text text muted"></small>
                             </div>
 
-                            <button  type="submit" value="enviar" class="btn btn-dark w-100">Enviar</button>
-                    </form>
-                    <div id="error"></div>
+                            <button type="submit" value="enviar" class="btn btn-dark w-100">Enviar</button>
+                        </form>
+                        <div id="error"></div>
 
                     </div>
                 </div>
